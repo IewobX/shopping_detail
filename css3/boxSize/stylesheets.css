@@ -1,0 +1,16 @@
+div{
+    width:300px;
+    border: solid 30px #ffaa00;
+    padding: 30px;
+    background-color: #ffff00;
+    margin: 20px auto;
+}
+div#div1{
+    box-sizing: content-box;
+}
+div#div2{
+    box-sizing: border-box;
+}
+div#div3{
+    box-sizing: padding-box;
+}

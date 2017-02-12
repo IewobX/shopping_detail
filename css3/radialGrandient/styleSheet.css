@@ -1,0 +1,5 @@
+div{
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(ellipse closest-corner at 130px 50px,orange,white,yellow,red) ;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>创建并下载二进制文件</title>
+    <script>
+	function Blob_test() {
+    	var text = document.getElementById('text').value;
+    	var blob;
+    	var result = document.getElementById('result');
+		
+    	if(!window.Blob)
+			result.innerHTML = "Your browser is not supported Blob Object";
+		else blob = new Blob([text]);
+			
+    	if(window.URL){
+			result.innerHTML = '<a download href = "'+ window.URL.createObjectURL(blob) +'" target="_blank">Download</a>';
+    	}
+	}
+	</script>
+</head>
+<body>
+<textarea id="text" placeholder="please input some word"></textarea><br />
+<button id="btndownload" onclick="Blob_test()">Create And Download Blob Files</button>
+<output id="result"></output>
+</body>
+</html>
