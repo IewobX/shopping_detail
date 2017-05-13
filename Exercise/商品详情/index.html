@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <link rel="stylesheet" href="css/universal.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="script/script.js" async></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/cloudzoom.css" />
+    <script type="text/javascript" src="script/cloudzoom.js"></script>
+    <script type="text/javascript">
+        CloudZoom.quickStart();
+    </script>
+
+</head>
+<body>
+
+<div class="detail comWidth clear">
+    <div class="detail_left fl">
+        <img class = "cloudzoom detail_img" src = "img/商品详情_r2_c2.png"
+             data-cloudzoom = "zoomImage: 'img/商品详情_r2_c2.png'" />
+        <!--<div class="detail_preview">-->
+                <!--<span class="detail_img">-->
+                    <!--<img src="img/商品详情_r2_c2.png" alt=""/>-->
+                    <!--<div class="img_hover"></div>-->
+                <!--</span>-->
+                <!--<div class="big_img"></div>-->
+        <!--</div>-->
+        <!--<div class="detail_ul" id="ab">-->
+            <!--<span class="prev" onclick="prev()">&lt;</span>-->
+            <!--<span class="next" onclick="next()">&gt;</span>-->
+            <!--<ul class="clear">-->
+                <!--<li class="li_active"><img src="img/六合鸭胗.png" alt=""></li>-->
+                <!--<li><img src="" alt=""></li>-->
+                <!--<li><img src="" alt=""></li>-->
+                <!--<li><img src="" alt=""></li>-->
+                <!--<li><img src="" alt=""></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    </div>
+    <div class="detail_main fl">
+        <b>六合鸭胗</b>
+        <p class="price">
+            <span>销售价：</span><b>￥372.00</b>
+            <span class="market_price">市场价：</span>
+            <s>￥412.00</s>
+        </p>
+        <p class="integral">赠送积分：<span>310</span></p>
+        <hr/>
+        <div class="spec">
+            <p><label>重量：</label><a href="#">12kg</a></p>
+            <p><label>规格：</label><a href="#">小S</a><a href="#">中M</a><a href="#">大L</a></p>
+            <p>
+                <label for="num">数量：</label>
+                <span>
+                        <button onclick="sub()">-</button><input type="text" value="1" id="num"/><button
+                        onclick="add()">+</button>
+                    </span>
+            </p>
+        </div>
+        <div class="submit">
+            <a href="#" class="fr"><span class="star"></span>收藏商品</a>
+            <button>立即购买</button>
+            <button>加入购物车</button>
+        </div>
+    </div>
+    <div class="hot_and_recent fl">
+        <p class="title">最近浏览过的</p>
+        <div class="contain">
+            <div>
+                <img src="img/六合二节翅.png" alt=""/>
+            </div>
+            <span class="red">￥110.00</span>
+            <div>
+                <img src="img/六合鸭头.png" alt=""/>
+            </div>
+            <span class="red">￥185.00</span><br/>
+            <a href="#">清空历史记录</a>
+        </div>
+    </div>
+</div>
+<div class="goods comWidth clear">
+
+</div>
+
+</body>
+</html>
