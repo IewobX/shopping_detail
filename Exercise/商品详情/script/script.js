@@ -26,28 +26,31 @@ function readCookie(name) {
 function eraseCookie(name) {
     createCookie(name,"",-1);
 }
-// let img1 = $('.contain')[0].getElementsByTagName('img')[0].src;
-// let img2 = $('.contain')[0].getElementsByTagName('img')[1].src;
-// createCookie('firstimg',img1,new Date());
-// createCookie('secondimg',img2,new Date());
+let img1 = $('.contain')[0].getElementsByTagName('img')[0].src;
+let img2 = $('.contain')[0].getElementsByTagName('img')[1].src;
+createCookie('firstimg',img1,new Date());
+createCookie('secondimg',img2,new Date());
 
 
-console.log();
+
 $(document).ready(
     function () {
-        let commodityId = 8;
-        let url = 'http://duolaimon.cn';
+        let commodityId = 3;
+        let url = 'http://duolaimon.cn/';
         $.ajax({
-            url: url+'/shop/commodities/'+commodityId,
+            url: url+'shop/commodities/'+commodityId,
             type: "GET",
             // contentType: "application/json",
             // data: "",
             // crossDomain: true,
             success: function (result) {
                 console.log('success!');
-                console.log(result);
-                //$(".price")[0].getElementsByTagName("b")[0].innerHTML = '￥' + result.commodityPrice;
-                //$(".detail_left")[0].getElementsByTagName("img")[0].src = url + result.commodityPicture;
+                $('.price')[0].getElementsByTagName("b")[0].innerHTML = '￥' + result.commodityPrice;
+                $('.price')[0].getElementsByTagName('i')[0].innerHTML= result.commodityLeavenum;
+                $('.integral')[0].getElementsByTagName('span')[0].innerHTML = result.commodityPrice/10;
+                $(".detail_left")[0].getElementsByTagName("img")[0].src = url + result.commodityPicture;
+                $('[data-cloudzoom]').data('CloudZoom').T = url + result.commodityPicture;
+                $('.spec')[0].getElementsByTagName('a')[0].innerHTML = result.commodityStandard+'kg';
             },
             error: function () {
                 console.log('ajax error');
@@ -56,6 +59,16 @@ $(document).ready(
         });
     }
 );
+
+
+/*@xboy
+ * 规格选择
+ * */
+
+
+
+
+
 /*@xboy
  * detail轮播图
  */

@@ -147,6 +147,7 @@
     font-size: 16px;
 }
 .detail_main .spec{
+    margin-top: 30px;
     padding-left: 15px;
 }
 .detail_main .spec p {
@@ -195,53 +196,38 @@
     color: #FFFFFF;
     margin-left: 20px;
 }
-.detail_main .submit .star{
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    background: url("../img/star.png") top left ;
-}
+
 
 /*@xboy
 **goods
 */
 .goods{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
-}
 
-/*@xboy
-**goods_main
-*/
-.goods_main{
-    margin-left: 20px;
-    width: 778px;
 }
-.goods_main ul{
-
-
-    border: solid #DFDFDF 1px;
+.goods p{
+    padding-left: 10px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    border: solid 1px #DFDFDF;
 }
-.goods_main ul li{
-    float: left;
-}
-.goods_main ul li a{
-    font-size: 15px;
-    display: block;
-    height: 42px;
-    line-height: 42px;
-    width: 150px;
+.item{
     text-align: center;
-    margin-right: 2px;
+    float: left;
+
+    padding: 10px;
+    width: 178px;
 }
-.goods_main ul .a_active{
-    color: #fff;
-    background-color: #8fc320;
+.item img{
+    height: 178px;
+    width: 178px;
+    border: solid 1px #DFDFDF;
+    padding: 0;
 }
-.goods_main .text{
-    font-size: 16px;
-    padding: 20px;
-    text-indent: 32px;
-    line-height: 24px;
-    letter-spacing: 2px;
+.item span{
+    display: inline-block;
+    margin-top: 10px;
+    color: #8fc320;
 }
