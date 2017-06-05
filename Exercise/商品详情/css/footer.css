@@ -1,6 +1,6 @@
 *{
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 #footer{
 	height: 346px;
@@ -38,7 +38,7 @@
 	width: 100%;
 	float: left;
 	text-align: center;
-	font-family: MicrosoftYaHeiLight [Regular];
+	font-family: MicrosoftYaHeiLight;
 	font-size: 11px;
 	color: #000;
 }
@@ -46,12 +46,12 @@
 	list-style: none;
 }
 .footer-title{
-	font-family: MicrosoftYaHeiLight [Regular];
+	font-family: MicrosoftYaHeiLight;
 	font-size: 20px;
 	color: #000000;
 }
 .footer-li{
-	font-family: font-family: MicrosoftYaHeiLight [Regular];
+	font-family:  MicrosoftYaHeiLight ;
 	font-size: 15px;
 	
 }

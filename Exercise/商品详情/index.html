@@ -37,7 +37,9 @@
             </form>
         </div>
         <div id="header-main-buycar">
-            <img src="img/buycar.jpg" alt="购物车">
+            <a href="car.html">
+                <img src="img/buycar.jpg" alt="购物车">
+                </a>
         </div>
     </div>
     <div id="header-bottom">
@@ -82,21 +84,21 @@
             <span class="market_price">库存：</span>
             <i></i>
         </p>
-        <p class="integral">赠送积分：<span>310</span></p>
+        <p class="integral">赠送积分：<span></span></p>
         <hr/>
         <div class="spec">
             <p><label>规格：</label><a></a></p>
             <p>
                 <label for="num">数量：</label>
                 <span>
-                        <button onclick="sub()">-</button><input type="text" value="1" id="num"/><button
+                    <button onclick="sub()">-</button><input type="text" value="1" id="num"/><button
                         onclick="add()">+</button>
-                    </span>
+                </span>
             </p>
         </div>
         <div class="submit">
             <button>立即购买</button>
-            <button>加入购物车</button>
+            <button onclick="addCar()">加入购物车</button>
         </div>
     </div>
     <div class="hot_and_recent fl">
@@ -163,9 +165,9 @@
         <div id="footer-main-left">
             <ul>
                 <li class="footer-title">关于我们</li>
-                <li class="footer-li"><a href="">公司简介</a></li>
-                <li class="footer-li"><a href="">联系方式</a></li>
-                <li class="footer-li"><a href="">加盟入驻</a></li>
+                <li class="footer-li"><a href="AboutUs.html#introduction" target="_blank">公司简介</a></li>
+                <li class="footer-li"><a href="AboutUs.html#contact" target="_blank">联系方式</a></li>
+                <li class="footer-li"><a href="AboutUs.html#join" target="_blank">加盟入驻</a></li>
             </ul>
         </div>
         <div id="footer-main-center">
